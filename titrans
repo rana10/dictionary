@@ -1,13 +1,10 @@
 #!/bin/sh
-echo "Please enter a word in English for translation to Bangla:"
+echo "Please enter a English word for translation to Bangla:"
 read word
-
 line=`(grep -i -w -n $word /usr/trans/english | sed -n 's/^\([0-9]*\)[:].*/\1/p')`
 bangla=`(grep -i -w $line /usr/trans/bangla)`
-
 bang=${bangla##*|}
 echo $bang
-
-echo "press enter to terminate"
+echo "Press Enter to Exit"
 read
 
