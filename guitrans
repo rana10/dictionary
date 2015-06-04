@@ -5,5 +5,6 @@ eng=$(zenity --entry --title="English to Bangla translator tool" --text="Please 
 line=$(grep -i -w -n $eng /usr/trans/english |sed -n 's/^\([0-9]*\)[:].*/\1/p')
 bangla=$(grep -i -w $line /usr/trans/bangla)
 bang=${bangla##*|} 
+#Random 
 zenity --info --text "The translation of the word in Bangla is $bang"
 
