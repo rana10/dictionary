@@ -1,10 +1,10 @@
 #!/bin/sh
-eng=$(zenity --title="English to Bangla translator tool")
-#eng=$(zenity --entry --text="Please enter a word to be translated to Bangla")
-eng=$(zenity --entry --title="English to Bangla translator tool" --text="Please enter a word to be translated to Bangla")
+eng=$(zenity --title="English to Bangla Translator")
+#eng=$(zenity --entry --text="Please enter a word to be translated from English to Bangla")
+eng=$(zenity --entry --title="English to Bangla translator" --text="Please enter a English word to be translated to Bangla")
 line=$(grep -i -w -n $eng /usr/trans/english |sed -n 's/^\([0-9]*\)[:].*/\1/p')
 bangla=$(grep -i -w $line /usr/trans/bangla)
 bang=${bangla##*|} 
 #Random 
-zenity --info --text "The translation of the word in Bangla is $bang"
+zenity --info --text "The Bangla word is $bang"
 
