@@ -8,3 +8,7 @@ zenity asks the user to write an English word according to the given list and it
 TUI Implementation:
 ----------------------------------------
 In command line you will give the english world according to the given list and you can see the translated word in bengali
+
+Description:
+-----------------------------
+
