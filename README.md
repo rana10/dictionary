@@ -12,3 +12,4 @@ In command line you will give the english world according to the given list and 
 Description:
 -----------------------------
 
+the whole service is available in a server and user can use it via telnet. he can download expected file and run it
