@@ -2,8 +2,8 @@
 english=$(zenity --title="English to Bangla Translator")
 #eng=$(zenity --entry --text="Please enter a word to be translated from English to Bangla")
 english=$(zenity --entry --title="English to Bangla translator" --text="Please enter a English word to be translated to Bangla")
-cap=$(grep -i -w -n $english /usr/trans/english |sed -n 's/^\([0-9]*\)[:].*/\1/p')
-bengali=$(grep -i -w $cap /usr/trans/bangla)
+cap=$(grep -i -w -n $english /var/english |sed -n 's/^\([0-9]*\)[:].*/\1/p')
+bengali=$(grep -i -w $cap /var/bangla)
 bangla=${bengali##*|} 
 #Random 
 zenity --info --text "The Bangla word is $bangla"
