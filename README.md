@@ -1,6 +1,10 @@
-This is a English to Bengali Translator program with english pronanciation
+This is a English to TUI Implementation:Bengali Translator program with english pronanciation
 The translation is according to the swadesh list of words
 
-GUI implementation:
+GUI Implementation:
 --------------------------------------------
 zenity asks the user to write an English word according to the given list and it will show output translated into Bengali
+
+TUI Implementation:
+----------------------------------------
+In command line you will give the english world according to the given list and you can see the translated word in bengali
