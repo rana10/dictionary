@@ -3,6 +3,10 @@
 set timeout 0
 #set user test
 #set pass qwerty
+spawn curl http://semes-olla.rhcloud.com/words?Swadesh/Indo-Iranian/Bengali.py>/var/bangla
+interact
+spawn curl http://semes-olla.rhcloud.com/words?Swadesh/English.py>/var/
+interact
 
 spawn telnet localhost 
 expect "login: "
